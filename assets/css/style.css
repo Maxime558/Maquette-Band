@@ -1,0 +1,208 @@
+@font-face {
+  font-family: Lato-Regular;
+  src: url(../font/Lato-Regular.ttf);
+}
+
+/*
+ ██████╗ ███████╗███████╗███████╗████████╗
+ ██╔══██╗██╔════╝██╔════╝██╔════╝╚══██╔══╝
+ ██████╔╝█████╗  ███████╗█████╗     ██║   
+ ██╔══██╗██╔══╝  ╚════██║██╔══╝     ██║   
+ ██║  ██║███████╗███████║███████╗   ██║   
+ ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝   ╚═╝   
+                                          
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --width: 60%;
+  font-family: "Lato-Regular", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/*
+███████╗███████╗ ██████╗████████╗██╗ ██████╗ ███╗   ██╗    ██╗  ██╗███████╗ █████╗ ██████╗ ███████╗██████╗     ██╗███╗   ██╗ █████╗ ██╗   ██╗
+██╔════╝██╔════╝██╔════╝╚══██╔══╝██║██╔═══██╗████╗  ██║    ██║  ██║██╔════╝██╔══██╗██╔══██╗██╔════╝██╔══██╗   ██╔╝████╗  ██║██╔══██╗██║   ██║
+███████╗█████╗  ██║        ██║   ██║██║   ██║██╔██╗ ██║    ███████║█████╗  ███████║██║  ██║█████╗  ██████╔╝  ██╔╝ ██╔██╗ ██║███████║██║   ██║
+╚════██║██╔══╝  ██║        ██║   ██║██║   ██║██║╚██╗██║    ██╔══██║██╔══╝  ██╔══██║██║  ██║██╔══╝  ██╔══██╗ ██╔╝  ██║╚██╗██║██╔══██║╚██╗ ██╔╝
+███████║███████╗╚██████╗   ██║   ██║╚██████╔╝██║ ╚████║    ██║  ██║███████╗██║  ██║██████╔╝███████╗██║  ██║██╔╝   ██║ ╚████║██║  ██║ ╚████╔╝ 
+╚══════╝╚══════╝ ╚═════╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝    ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝    ╚═╝  ╚═══╝╚═╝  ╚═╝  ╚═══╝  
+*/
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.856);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: #fff;
+  z-index: 2;
+  height: 8.5vh;
+}
+
+.title h1 {
+  font-size: 24px;
+}
+
+.main-nav .menu-toggle {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+/* Styles pour l'image de fond */
+.background-image {
+  background-image: url("../img/la.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  margin-top: 80px;
+}
+
+/*
+███████╗███████╗ ██████╗████████╗██╗ ██████╗ ███╗   ██╗    ██████╗  █████╗ ███╗   ██╗██████╗ 
+██╔════╝██╔════╝██╔════╝╚══██╔══╝██║██╔═══██╗████╗  ██║    ██╔══██╗██╔══██╗████╗  ██║██╔══██╗
+███████╗█████╗  ██║        ██║   ██║██║   ██║██╔██╗ ██║    ██████╔╝███████║██╔██╗ ██║██║  ██║
+╚════██║██╔══╝  ██║        ██║   ██║██║   ██║██║╚██╗██║    ██╔══██╗██╔══██║██║╚██╗██║██║  ██║
+███████║███████╗╚██████╗   ██║   ██║╚██████╔╝██║ ╚████║    ██████╔╝██║  ██║██║ ╚████║██████╔╝
+╚══════╝╚══════╝ ╚═════╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝    ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝ 
+*/
+#texte-band {
+  margin: 2rem auto;
+  width: 90%;
+}
+#texte-band h2 {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+#texte-band #music {
+  color: gray;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+#texte-band #paragraphe {
+  line-height: 1.2rem;
+  margin-bottom: 4rem;
+}
+.band {
+  width: var(--width);
+  margin: auto;
+}
+.name {
+  text-align: center;
+  margin: 1rem 0;
+  font-weight: 400;
+}
+
+/*
+███████╗███████╗ ██████╗████████╗██╗ ██████╗ ███╗   ██╗    ██████╗  █████╗ ████████╗███████╗
+██╔════╝██╔════╝██╔════╝╚══██╔══╝██║██╔═══██╗████╗  ██║    ██╔══██╗██╔══██╗╚══██╔══╝██╔════╝
+███████╗█████╗  ██║        ██║   ██║██║   ██║██╔██╗ ██║    ██║  ██║███████║   ██║   █████╗  
+╚════██║██╔══╝  ██║        ██║   ██║██║   ██║██║╚██╗██║    ██║  ██║██╔══██║   ██║   ██╔══╝  
+███████║███████╗╚██████╗   ██║   ██║╚██████╔╝██║ ╚████║    ██████╔╝██║  ██║   ██║   ███████╗
+╚══════╝╚══════╝ ╚═════╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝    ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝ 
+*/
+
+.date {
+  background-color: black;
+  color: white;
+}
+.date h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 3rem;
+  letter-spacing: 0.3rem;
+}
+.date #tour-date {
+  color: gray;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.date .mois {
+  background-color: white;
+  color: gray;
+  padding: 1rem;
+}
+.date .mois span {
+  background-color: red;
+  color: white;
+  padding: 0.3rem;
+  margin-left: 1rem;
+}
+.date .mois .hr {
+  color: grey;
+  border: solid rgba(211, 211, 211, 0.205) 1px;
+}
+.date .mois2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  color: gray;
+  padding: 1rem;
+}
+.date .mois2 span {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 1.2rem;
+  margin-right: 5rem;
+  color: white;
+}
+
+.date .image {
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+}
+.date .image .image-ville {
+  margin-top: 2rem;
+  background-color: white;
+  color: black;
+  height: 52vh;
+}
+
+.date .image .image-ville .city {
+  margin: 1rem 0;
+  margin-left: 1rem;
+}
+.date .image .image-ville .day {
+  margin: 0.5rem 0;
+  margin-left: 1rem;
+  color: gray;
+}
+.date .image .image-ville .texte {
+  margin: 0.5rem 0;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+.date .image .image-ville .ticket span {
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+#image2 {
+  padding-bottom: 3rem;
+}
